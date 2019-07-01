@@ -9,12 +9,13 @@ public class Main {
         System.out.println("podaj nazwę pory roku");
 
         Season value  = Season.fromString(sc.nextLine());
-        assert value != null;
-
-        for(String name: value.getMonths()){
-            System.out.println(name);
-
+        if(null == value){
+            System.out.println("podana pora roku nie została znaleziona");
+        } else{
+            value.printMonths();
         }
+
+
 
 
     }

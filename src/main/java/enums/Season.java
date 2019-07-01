@@ -22,6 +22,12 @@ public enum Season {
         return this.months;
     }
 
+    public void printMonths() {
+        for (String name : getMonths()) {
+            System.out.println(name);
+        }
+    }
+
     public static Season fromString(String text) {
         String seasonName = text.trim();
         for (Season b : Season.values()) {
@@ -33,5 +39,4 @@ public enum Season {
     }
 
 
-
-    }
+}
