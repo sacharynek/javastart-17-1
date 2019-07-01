@@ -8,15 +8,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("podaj nazwę pory roku");
 
-        Season value  = Season.fromString(sc.nextLine());
-        if(null == value){
+        Season value = Season.fromString(sc.nextLine());
+        if (null == value) {
             System.out.println("podana pora roku nie została znaleziona");
-        } else{
+        } else {
             value.printMonths();
         }
-
-
-
 
     }
 }

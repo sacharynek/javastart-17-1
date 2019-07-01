@@ -9,14 +9,11 @@ public enum Season {
     private final String polishName;
     private final String[] months;
 
-    private Season(String polishName, String[] months) {
+    Season(String polishName, String[] months) {
         this.polishName = polishName;
         this.months = months;
     }
 
-    public String getPolishName() {
-        return this.polishName;
-    }
 
     public String[] getMonths() {
         return this.months;
